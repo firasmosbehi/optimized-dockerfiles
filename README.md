@@ -1,3 +1,5 @@
+![Banner](https://github.com/user-attachments/assets/cf63120c-d365-404d-9343-c89400453fa9)
+
 # 🚀 Optimized Dockerfiles Collection
 
 This repository contains a curated set of **production-ready**, **DevOps-focused**, and **highly optimized Dockerfiles** for different kinds of applications and stacks.  
