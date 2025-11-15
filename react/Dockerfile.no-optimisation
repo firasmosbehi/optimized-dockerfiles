@@ -1,0 +1,15 @@
+FROM node:20
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+
+# Build the app (still okay)
+RUN npm run build
+
+# ❌ Serve React app using Vite preview (NOT optimized for production)
+EXPOSE 4173
+CMD ["npm", "run", "preview"]
