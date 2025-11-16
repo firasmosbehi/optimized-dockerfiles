@@ -1,19 +1,13 @@
 # -------------------------------------------------------
-# 1) Install dependencies in a dedicated layer
+# 1) Build the Next.js app
 # -------------------------------------------------------
-FROM node:20-alpine AS deps
+FROM node:20-alpine AS builder
+
 WORKDIR /app
+
 COPY package*.json ./
 RUN npm install --omit=dev
 
-
-# -------------------------------------------------------
-# 2) Build the Next.js app
-# -------------------------------------------------------
-FROM node:20-alpine AS builder
-WORKDIR /app
-
-COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 # Build Next.js with standalone output
@@ -21,7 +15,7 @@ RUN npm run build
 
 
 # -------------------------------------------------------
-# 3) Run lightweight production image
+# 2) Run lightweight production image
 # -------------------------------------------------------
 FROM node:20-alpine AS runner
 WORKDIR /app
