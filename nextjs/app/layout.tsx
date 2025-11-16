@@ -1,12 +1,13 @@
 import "./globals.css";
 import Link from "next/link";
+import { ReactNode } from "react";
 
 export const metadata = {
   title: "Learning Tracker - Next.js",
   description: "Three-page demo app using Next.js App Router",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children } : { children: ReactNode }) {
   return (
     <html lang="en">
       <body style={{ fontFamily: "sans-serif", margin: 0 }}>
