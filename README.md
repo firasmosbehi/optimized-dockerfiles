@@ -52,7 +52,6 @@ Each subfolder represents a **standalone example project**, with:
 | **Frontend**  | Angular (CSR + SSR)                | ✅ DONE        |
 | **Frontend**  | Vue 3 + Vite                       | 🔜 Coming soon |
 | **Frontend**  | SvelteKit                          | 🔜 Coming soon |
-| **Frontend**  | Astro (Partial SSR / Islands)      | 🔜 Coming soon |
 |               |                                    |                |
 | **Backend**   | Node.js (Express)                  | 🔜 Coming soon |
 | **Backend**   | Node.js (Fastify)                  | 🔜 Coming soon |

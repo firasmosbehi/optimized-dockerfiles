@@ -1,0 +1,11 @@
+.svelte-kit
+node_modules
+dist
+build
+.DS_Store
+.vscode
+.env
+.env.local
+README.md
+.gitignore
+Dockerfile
