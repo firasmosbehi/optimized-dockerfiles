@@ -8,7 +8,6 @@ npm-debug.log
 .vscode
 .env
 .dockerignore
-nginx-config
 Dockerfile.basic
 eslint.config.js
 README.md
