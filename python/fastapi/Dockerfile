@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir poetry
 COPY pyproject.toml poetry.lock ./
 
 # Install dependencies
-RUN poetry export -f requirements.txt --without-hashes -o requirements.txt
+RUN poetry export -f requirements.txt --without-hashes --only main -o requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the source code
